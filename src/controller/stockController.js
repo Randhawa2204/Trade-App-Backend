@@ -1,7 +1,7 @@
 import { response } from "express";
 import Stocks from "../model/stocks.js";
 
-export const getAllStocks = async (req, res) => {
+export const getAllStocks = async (req, res) => { 
     try {
        const data = await Stocks.find()
        return res.status(200).json(data)
